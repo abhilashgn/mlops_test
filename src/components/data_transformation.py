@@ -11,7 +11,7 @@ from sklearn.preprocessing import OneHotEncoder, StandardScaler
 
 from src.exception import CustomException
 from src.logger import logging
-from src.utils import save_object
+from src.utils import save_object, evaluate_models
 
 
 @dataclass
@@ -119,6 +119,6 @@ class DataTransformation:
 
 
         except Exception as e:
-            raise CustomException(e, sys)
+            raise CustomException(e,sys)
 
 
